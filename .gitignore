@@ -1,0 +1,18 @@
+# User-specific stuff:
+.idea/**/workspace.xml
+build/
+
+# Dependency directories
+node_modules/
+
+# IntelliJ project files
+.idea
+*.iml
+
+# other general untracked crap
+.htaccess
+cron.php
+index.php
+install.php
+update.php
+xmlrpc.php

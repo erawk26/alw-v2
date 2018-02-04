@@ -1,0 +1,324 @@
+%hide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	display: none;
+	visibility: hidden;
+	overflow: hidden;
+	opacity: 0;
+}
+
+%maxw {
+	 margin-left: auto;
+	 margin-right: auto;
+	 max-width: $bp-mw;
+	 width: 100%;
+ }
+
+%boxw {
+	 display: block;
+	 max-width: 100%;
+	 box-sizing: border-box;
+ }
+
+%block {
+ @include flex(center, stretch);
+	 width: 100%;
+	 max-width: $bp-mw;
+	 display: block;
+	 height: 100%;
+	 margin: 0 auto;
+ }
+
+%blk-block {
+	 text-align: center;
+	 font-size: 1.25em;
+@include mobile {
+	font-size: 1em;
+}
+background: #454545;
+color: white;
+h1, h2, h3, h4 {
+	font-size: 2.5em;
+@include mobile {
+	font-size: 2em;
+}
+font-weight: 600;
+margin-bottom: 1.18em;
+}
+}
+
+%arrow {
+	 font-size: 17.5px;
+	 letter-spacing: 0.24em;
+	 text-decoration: none;
+	 text-transform: uppercase;
+&:after {
+	 font-size: 1.1em;
+	 line-height: normal;
+	 padding-left: .45em;
+	 font-family: $fontIcon;
+	 content: "\f0da";
+ }
+}
+
+%ken-burns {
+	 position: relative;
+	 text-decoration: none;
+.img-wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+&:before {
+	 content: " ";
+	 display: block;
+	 position: absolute;
+	 z-index: 1;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+	 box-shadow: inset -10px 10px 200px -30px rgba($shadow, 0.5);
+	 transition: box-shadow 2s ease-out;
+ }
+}
+.image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-size: cover;
+	background-position: 50%;
+	opacity: 1;
+	transition: transform 3s ease, opacity .5s ease;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.overlay {
+	transition: background .25s ease-in;
+@include flex();
+	width: 100%;
+	height: 100%;
+}
+.view {
+	transition: transform 1s ease-out, opacity .45s ease;
+	transform: translateY(100px);
+	opacity: 0;
+	z-index: 20;
+	color: $orange;
+	font-weight: $bold;
+	font-size: 1.5em;
+	text-decoration: none;
+	text-transform: uppercase;
+&:after {
+	 color: lighten($orange, 15);
+ }
+}
+&:hover {
+.img-wrapper:before {
+	box-shadow: inset -5px 5px 30px -20px $shadow;
+	transition: box-shadow 4s ease-out;
+}
+.image {
+	transition: transform 10s ease, opacity .5s ease;
+	transform: scale3d(1.3, 1.3, 1.3) translate3d(-10%, 10%, 0);
+	opacity: 0.25;
+}
+.view {
+	transform: translateY(0);
+	transition: transform .45s ease-in, opacity .1s ease;
+	align-self: center;
+	opacity: 1;
+}
+}
+}
+
+%hover-dir {
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.hover {
+.bg-img {
+	background-size: cover;
+	background-position: center;
+	background-repeat: repeat;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	height: 100%;
+	width: 100%;
+@include flex;
+	opacity:0.75;
+}
+background:$orange;
+height: 100%;
+width: 100%;
+left: -100%;
+top: 0;
+position: absolute;
+@include flex;
+.view-profile {
+	text-transform: uppercase
+}
+}
+.wrapper {
+	color: white;
+	font-weight: bold;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+}
+
+%after {
+	 position: relative;
+&:after {
+	 content: "";
+	 display: block;
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+ }
+}
+
+%ul-nostyle {
+	 display: block;
+	 list-style: none;
+ @include marding();
+	 width: 100%;
+	 height: auto;
+ }
+
+// buttons
+%hark-btn {
+	 $bg-clr: orange;
+	 $clr: #fff;
+	 $width: 200px;
+	 $up: 15px;
+	 $trans: all .3s ease;
+	 position: relative;
+	 top: $up;
+	 display: block;
+	 background: $bg-clr;
+	 color: $clr;
+	 transition: $trans;
+	 box-sizing: border-box;
+	 text-align: left;
+	 font-size: 1.35em;
+	 border-radius: 0;
+	 margin: 0 10px;
+	 padding: 15px 25px;
+	 cursor: pointer;
+span {
+	font-weight: 600;
+	font-family: $archer;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+&:after {
+	 transition: $trans;
+	 box-sizing: border-box;
+	 background-color: $bg-clr;
+	 content: "";
+	 display: block;
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 height: $up;
+	 z-index: -1;
+	 transform: translateY(0);
+	 background-image: url("../img/diag-lines.png");
+	 background-repeat: repeat;
+ }
+span:after {
+	display: inline-block;
+	padding: 0 8px;
+	content: ">";
+	width: 0;
+	overflow: visible;
+}
+&:hover, &:active, &:focus {
+	                    text-decoration: none !important;
+	                    top: 0;
+&:after {
+	 transform: translateY(100%);
+ }
+span:after {
+	content: ">>>";
+}
+}
+}
+
+%orange-btn {
+	 background-color: $orange;
+&:after {
+	 background-color: $orange;
+ }
+}
+
+%red-btn {
+	 background-color: $red;
+&:after {
+	 background-color: $red;
+ }
+}
+
+%purp-btn {
+	 background-color: $purp;
+&:after {
+	 background-color: $purp;
+ }
+}
+
+%burg-btn {
+	 background-color: $burg;
+&:after {
+	 background-color: $burg;
+ }
+}
+
+// Quote styling for testimonial client quote
+%blockquote {
+blockquote {
+	$quoteSz: 70px;
+	text-align: center;
+	border: none;
+q {
+	font-size: 1.12em;
+	quotes: "“" "”" "‘" "’";
+&:before, &:after {
+	           position: relative;
+	           margin: -10px 5px 0;
+	           line-height: 0;
+	           color: $orange;
+	           font-size: 70px;
+	           font-weight: 700;
+           }
+&:before {
+	 content: open-quote;
+	 top: 0.4 * $quoteSz;
+ }
+&:after {
+	 content: close-quote;
+	 top: 0.53 * $quoteSz;
+ }
+}
+}
+.person {
+.name {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.job {
+	color: $orange;
+}
+}
+}

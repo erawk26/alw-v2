@@ -1,0 +1,51 @@
+// Font Family
+$fontIcon: "FontAwesome";
+$fontBody: 'Arial';
+$fontHead: 'Arial';
+$base-font-size: 16px;
+
+// Colors
+$orange: #f76030;
+$orange2: #fb5f24;
+$dk-orange: darken($orange, 15);
+$red: #f93b32;
+$purp: #aa3655;
+$burg: #5b2d3c;
+$lt-grey: #f5f5f5;
+$grey: #7d7d7d;
+$dk-grey: #333;
+$shadow: #241f1c;
+$bg-clr: #fff;
+//bg gradients
+$trans-right: linear-gradient(90deg, rgba($lt-grey, 1) 45%, rgba($lt-grey, 0) 100%);
+$trans-left: linear-gradient(270deg, rgba($lt-grey, 1) 45%, rgba($lt-grey, 0)) 100%;
+$trans-down: linear-gradient(0deg, rgba($lt-grey, 1) 10%, rgba($lt-grey, .75) 30%, rgba($lt-grey, .3)) 100%;
+
+// Responsive breakpoints
+$mobile-breakpoint: 480px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 960px;
+$page-max-width: 1170px;
+$bp-mw: $page-max-width;
+$bp-xs: $mobile-breakpoint;
+$bp-sm: $tablet-breakpoint;
+$bp-md: $desktop-breakpoint;
+$bp-lg: 1200px;
+$bp-xs-max: ($bp-xs - 1);
+$bp-sm-max: ($bp-sm - 1);
+$bp-md-max: ($bp-md - 1);
+$bp-lg-max: ($bp-lg - 1);
+
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 700;
+
+$base-duration: .25s;
+$base-timing: ease-in-out;
+
+$formShadow: #444 1px 1px 4px 0 inset;
+
+$bdr: 2px dotted yellow; //layout debugging (dev only)
+
+@import 'mixins';

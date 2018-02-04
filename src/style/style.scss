@@ -8,5 +8,12 @@ Description: Child theme.
 Version: 1.0
 Tags: responsive, clean, minimal, modern, documentation
 */
-@import '../../node_modules/normalize.css/normalize.css';
-@import '../../node_modules/aos/dist/aos.css';
+
+// Base mixins placeholders and variables
+@import 'base/fonts';
+@import 'base/vars';
+@import 'base/mixins';
+@import 'base/placeholders';
+@import 'base/global';
+
+// Custom Stylesheets
