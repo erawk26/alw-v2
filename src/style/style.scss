@@ -16,5 +16,8 @@ Tags: responsive, clean, minimal, modern, documentation
 @import 'base/placeholders';
 @import 'base/global';
 
+//components
+@import 'components/header';
+
 // Custom Stylesheets
 @import 'custom/team';
