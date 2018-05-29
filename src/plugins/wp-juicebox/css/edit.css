@@ -1,0 +1,80 @@
+.jb-custom-wrap {
+	line-height: 20px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	width: 642px;
+}
+
+.jb-legend {
+	margin-left: 10px;
+}
+
+.jb-custom-wrap fieldset {
+	border: 1px solid #cccccc;
+	margin: 10px 0px;
+	padding: 10px 0px;
+}
+
+.jb-column-1, .jb-column-2, .jb-column-3, .jb-column-4 {
+	display: inline;
+	float: left;
+}
+
+.jb-column-1 {
+	margin-left: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 150px;
+}
+
+.jb-column-2 {
+	margin-left: 5px;
+	width: 465px;
+}
+
+.jb-column-3 {
+	margin-left: 5px;
+	width: 150px;
+}
+
+.jb-column-4 {
+	margin-left: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 620px;
+}
+
+.jb-column-2 input, .jb-column-2 textarea, .jb-column-3 input[type=text], .jb-column-3 select {
+	width: 100%;
+}
+
+.jb-column-2 input[type=text], .jb-column-3 input[type=text] {
+	font-size: 14px;
+	line-height: 20px;
+	padding: 3px 5px;
+}
+
+.jb-column-2 textarea {
+	font-family: Courier, monospace;
+	line-height: 15px;
+}
+
+.jb-column-clear {
+	clear: left;
+	height: 0px;
+	padding: 5px 0px;
+}
+
+.jb-toggle-source {
+	display: none;
+}
+
+.jb-table-buttons form {
+	display: inline;
+}
+
+#jb-manage-galleries-page img {
+	vertical-align: text-bottom;
+}

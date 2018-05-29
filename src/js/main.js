@@ -35,3 +35,13 @@ $(window).on('load', function () {
 $(window).resize(function () {
 	AOS.refresh;
 });
+// Contact form label slide
+$('input,select,textarea').focus(function(){
+	var me = $(this);
+	me.parent('span').siblings('label').addClass("animate-label");
+}).blur(function(){
+	var me = $(this);
+	if ( $(me).val() == ""){
+		me.parent('span').siblings('label').removeClass("animate-label");
+	}
+});
