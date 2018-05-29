@@ -1,7 +1,7 @@
 .upper {
 	text-transform: uppercase;
 }
-
+.limit-wrapper{@include set-max-width;}
 .entry {
 
 	.wp-image-link {

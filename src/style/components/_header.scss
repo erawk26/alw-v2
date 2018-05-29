@@ -1,0 +1,9 @@
+
+.header-content-wrapper {
+  .first-row-wrapper {
+    @include flex($align: stretch);
+    > *:first-child {
+      flex: 1 0 auto
+    }
+  }
+}

@@ -11,6 +11,9 @@ node_modules/
 
 # other general untracked crap
 .htaccess
+tools
+.babelrc
+README.md
 cron.php
 index.php
 install.php
